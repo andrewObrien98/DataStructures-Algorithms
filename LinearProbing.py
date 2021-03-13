@@ -8,12 +8,13 @@ def hash(key, list):
     list[index] = key
 
 
-list = []
-for i in range(11):
-    list.append(None)
+setOfKeys = [[9, 12, 14, 3, 4, 21, 18],[9, 14, 4, 18, 12, 3, 21],[12, 14, 3, 9, 4, 18, 21],[12, 3, 14, 18, 4, 9, 21],[12, 9, 18, 3, 14, 21, 4]]
+for keys in setOfKeys:
+    list = []
+    for i in range(9):
+        list.append(None)
+    for i in keys:
+        hash(i, list)
 
-keys = [26, 42, 5, 44, 92, 59, 40, 36, 12]
-for i in keys:
-    hash(i, list)
-
-print(list)
+    print(list, end = "")
+    print(list == [9,18,None,12,3,14,4,21,None])
