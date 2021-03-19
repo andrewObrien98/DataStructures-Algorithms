@@ -1,6 +1,6 @@
 
 """
-this one will prioritze it by keeping the max at the very top
+this one will prioritze it by keeping the max at the very top, basically a tree in an array
 list[0] = 0, this will always be, the max will always be at list[1], just makes it easier to find the parent
 """
 class PriorityQueuesBinaryHeap:
@@ -34,6 +34,7 @@ class PriorityQueuesBinaryHeap:
         return max
 
     def reOrganizeAfterMax(self, value):
+        print("need to fill this in")
         
 
 
